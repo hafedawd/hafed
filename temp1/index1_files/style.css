@@ -1,86 +1,761 @@
 @import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
 
-BODY{
-	height:100%;
-	font-family: 'Droid Arabic Kufi', 'droid_arabic_kufiregular', sans-serif !important;
-	font-size: 12px;
-	font-weight: normal;
-	font-style: normal;
-	color: #000;
-	background-color:#bcbdc1;
-	text-align:right !important;
-	margin:0px;
-	padding:0;
-	direction: rtl !important;
+:focus { outline: none; }
+::-ms-clear { display: none; }
+html, body { 
+  height: 100%;
+  min-height: 100%;
+}
+body { 
+	margin: 0; 
+	padding: 0; 
+}
+img { 
+	border: none; 
+	outline: none 
+}
+label, span { 
+  display: inline-block; 
+}
+button, input, select, textarea, div, span, label { 
+
+}
+
+textarea { 
+	overflow: auto; 
+	resize: vertical;
+	vertical-align: top; 
 }
 
 
-.nqodd
+/* ------------------------------------------------------- */
+/* fonts                                                   */
+/* ------------------------------------------------------- */
+
+body,
+body.rsp-body,
+.rsp-question-text,
+.rsp-single-container > ul > li > label,
+.rsp-multiple-container > ul > li > label,
+.rsp-single-container > ul > li > label .rsp-text,
+.rsp-multiple-container > ul > li > label .rsp-text,
+.rsp-matrix-container .rsp-table,
+.rsp-matrix-container .rsp-text,
+.rsp-progress-container label,
+textarea,
+.rsp-slider-container .rsp-slider-answer {
+  font-family: 'Raleway', sans-serif;
+  color: #7c7c7c;
+  font-size: ;
+}
+
+button, input[type="submit"], input[type="reset"], input[type="button"] {
+  color: #584578;
+  line-height: 35px;
+  text-transform: uppercase;
+}
+
+input[type="text"], textarea {
+  font-size: ;
+}
+
+a, a:active, a:focus, a:visited{
+  color: #204291;
+  text-decoration: underline;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+/* ------------------------------------------------------- */
+/* layout: header, content, footer                         */
+/* ------------------------------------------------------- */
+body.rsp-body{
+  background-color: #ffffff;
+  max-width: none !important;
+}
+
+#container{
+  min-height: 100%;
+  width: 100%;
+  margin: 0 auto -100px;
+  background-color: #fff;
+}
+
+#wrapper {
+  margin: 0 auto;
+}
+
+#header {
+  height: 100px;
+  padding-top: 40px;
+  background-color: #204291;
+  border-bottom: solid 1px #fff;
+}
+
+#header2{
+  height: 59px;
+  background-color: #4d86c9;
+  background-image: url(../images/features.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+
+#qxretitle{
+  float:left;
+  font-weight:normal;
+}
+
+#calltoaction{
+  width: 1040px;
+  margin: 0 auto;
+  text-align: right;
+}
+
+.rsp-header a, .rsp-header{
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 60px;
+  color: white;
+  text-decoration: none;
+  transition: all ease-in .2s;
+}
+
+.rsp-header a::after{
+    font-family: "FontAwesome";
+    padding-left: 7px;
+    margin-right: 10px;
+    content: "\f101";
+    font-weight: normal;
+    font-size: 24px;
+}
+.rsp-header a:hover{
+  color: #65cb98;
+}
+
+#logo {
+  display: block;
+  height: 35px;
+  width: 374px;
+  background: url(../images/logo-white.png) no-repeat;
+  margin: 0 auto;
+}
+
+#wrap-content {
+  width: 1040px;
+  margin: 0 auto;
+}
+
+#content { 
+  width: 100%;
+  padding-top:20px;
+  overflow: auto;
+}
+
+#push{
+  height: 100px;
+  background-color: #fcfcfc;
+}
+
+#wrap-footer {
+  width: auto;
+  margin: 0 auto;
+  height:99px;
+  background: #fcfcfc;
+  border-top: solid 1px #e6e6e6;
+}
+#footer1{
+  margin: 0 30px;
+  font-size: 15px;
+  float: right;
+}
+
+#footer1 p{
+  margin: .3em;
+}
+
+#footer2{
+  clear: both;
+  text-align: center;
+}
+
+/* ------------------------------------------------------- */
+/* responsive                                              */
+/* ------------------------------------------------------- */
+@media (max-width: 1040px) {
+  HTML{
+    height:100%;
+    -webkit-text-size-adjust: none;
+  }
+
+  body{
+    
+  }
+    
+  #container{
+    
+  }
+
+  #wrapper{
+  
+  }
+
+  #header{
+    border-bottom: solid 1px #c3d4e3;
+  }
+
+  #logo {
+    width:30%;
+    background-size:100% auto;
+  }
+
+  #qxretitle{
+  margin-left: 5px;
+  }
+
+  #calltoaction{
+    width: auto;
+  }
+
+  .rsp-header a::after{
+    position: relative;
+    top: 2px;
+  }
+
+  #wrap-content{
+    width: auto;
+  }
+
+  #content{
+    height: auto;
+    overflow: auto; 
+  }
+
+  #wrap-footer{
+    height:30px;
+  }
+
+  #footer1{
+    margin: 10px;
+  }
+}
+
+@media (max-width: 599px) {
+  HTML{
+    height:100%;
+    -webkit-text-size-adjust: none;
+  }
+
+  body{
+    
+  }
+    
+  #container{
+    
+  }
+
+  #wrapper{
+  
+  }
+
+  #header{
+    height: 60px;
+    padding-top: 22px;
+  }
+
+  #header2{
+    display: none;
+  }
+
+  #logo {
+    width:60%;
+    background-size:100% auto;
+  }
+
+  #qxretitle{
+    display: none;
+  }
+
+  #calltoaction{
+    width: auto;
+  }
+
+  #content{
+    width: 100%;
+  }
+
+  .rsp-header a{
+    font-size: 18px;
+  }
+
+  #wrap-footer{
+    height:30px;
+  }
+
+  #footer1{
+    margin: 10px;
+  }
+}
+/* ------------------------------------------------------- */
+/* form layout: table, question, answer, button controls   */
+/* ------------------------------------------------------- */
+
+form {
+  margin: 0;
+  padding-bottom: 43px;
+}
+
+.nqquestion {
+  padding: 0 0 20px; 
+}
+
+form > table[class~=Action-Table] {
+  width: 100%;
+}
+
+/* ------------------------------------------------------- */
+/* form elements: text, radio, button                      */
+/* ------------------------------------------------------- */
+input[type="text"], textarea { 
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+/* ============== */
+/* = Typography = */
+/* ============== */
+
+/* h1 */
+
+body.rsp-body h1,
+.rsp-question-text h1,
+.rsp-single-container > ul > li > label h1,
+.rsp-multiple-container > ul > li > label h1,
+.rsp-single-container > ul > li > label .rsp-text h1,
+.rsp-multiple-container > ul > li > label .rsp-text h1,
+.rsp-matrix-container .rsp-table h1,
+.rsp-matrix-container .rsp-text h1,
+.rsp-progress-container label h1,
+textarea h1,
+.rsp-slider-container .rsp-slider-answer h1 {
+    color: #000;
+}
+
+
+/* h2 */
+
+body.rsp-body h2,
+.rsp-question-text h2,
+.rsp-single-container > ul > li > label h2,
+.rsp-multiple-container > ul > li > label h2,
+.rsp-single-container > ul > li > label .rsp-text h2,
+.rsp-multiple-container > ul > li > label .rsp-text h2,
+.rsp-matrix-container .rsp-table h2,
+.rsp-matrix-container .rsp-text h2,
+.rsp-progress-container label h2,
+textarea h2,
+.rsp-slider-container .rsp-slider-answer h2 {
+    color: #767676;
+}
+
+
+/* h3 */
+
+body.rsp-body h3,
+.rsp-question-text h3,
+.rsp-single-container > ul > li > label h3,
+.rsp-multiple-container > ul > li > label h3,
+.rsp-single-container > ul > li > label .rsp-text h3,
+.rsp-multiple-container > ul > li > label .rsp-text h3,
+.rsp-matrix-container .rsp-table h3,
+.rsp-matrix-container .rsp-text h3,
+.rsp-progress-container label h3,
+textarea h3,
+.rsp-slider-container .rsp-slider-answer h3 {
+    color: #A8A8A8;
+}
+
+
+/* h4 */
+
+body.rsp-body h4,
+.rsp-question-text h4,
+.rsp-single-container > ul > li > label h4,
+.rsp-multiple-container > ul > li > label h4,
+.rsp-single-container > ul > li > label .rsp-text h4,
+.rsp-multiple-container > ul > li > label .rsp-text h4,
+.rsp-matrix-container .rsp-table h4,
+.rsp-matrix-container .rsp-text h4,
+.rsp-progress-container label h4,
+textarea h4,
+.rsp-slider-container .rsp-slider-answer h4 {
+    color: #A8A8A8;
+}
+
+
+/* h5 */
+
+body.rsp-body h5,
+.rsp-question-text h5,
+.rsp-single-container > ul > li > label h5,
+.rsp-multiple-container > ul > li > label h5,
+.rsp-single-container > ul > li > label .rsp-text h5,
+.rsp-multiple-container > ul > li > label .rsp-text h5,
+.rsp-matrix-container .rsp-table h5,
+.rsp-matrix-container .rsp-text h5,
+.rsp-progress-container label h5,
+textarea h5,
+.rsp-slider-container .rsp-slider-answer h5 {
+    color: #A8A8A8;
+}
+
+
+/* h6 */
+
+body.rsp-body h6,
+.rsp-question-text h6,
+.rsp-single-container > ul > li > label h6,
+.rsp-multiple-container > ul > li > label h6,
+.rsp-single-container > ul > li > label .rsp-text h6,
+.rsp-multiple-container > ul > li > label .rsp-text h6,
+.rsp-matrix-container .rsp-table h6,
+.rsp-matrix-container .rsp-text h6,
+.rsp-progress-container label h6,
+textarea h6,
+.rsp-slider-container .rsp-slider-answer h6 {
+    color: #A8A8A8;
+}
+
+
+
+
+
+/* ================== */
+/* = Text inflation = */
+/* ================== */
+
+body.rsp-body {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+/* =========================== */
+/* = Survey content elements = */
+/* =========================== */
+
+.rsp-question {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.rsp-question-text {
+    
+}
+
+@media (max-width: 1000px) {
+    .rsp-question-text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .rsp-question-text {
+        font-size: 14px;
+    }
+}
+
+/* ------------------------------------------ */
+/* --------- answer: background-color ------- */
+/* ------------------------------------------ */
+.rsp-single-container > ul > li > label,
+.rsp-multiple-container > ul > li > label,
+.rsp-matrix-container .rsp-table > thead > tr,
+.rsp-matrix-container .rsp-table > tbody > tr > td.rsp-formfield > label:hover,
+.rsp-slider-container .ui-slider-handle {
+    background-color: #ededed;
+}
+.rsp-slider-container .rsp-slider-top .rsp-slider-answer {
+    color: #ffffff;
+}
+.rsp-matrix-container .rsp-table > tbody > tr,
+.rsp-matrix-container .rsp-table > thead > tr{
+    border-bottom-color:#ffffff;
+}
+@media (max-width: 899px) {
+    .rsp-matrix-container .rsp-table > tbody > tr > td.rsp-formfield  > label{
+        background-color: ;
+    }
+}
+/* ------------------------------------------------------------------- */
+/* button: font-size, font-weight, font-style, color, background-color */
+/* ------------------------------------------------------------------- */
+button.rsp-btn,
+button.rsp-btn:hover:active {
+    font-size: 16px;
+    font-weight: inherit;
+    font-style: inherit;
+    color: #86b1e0;
+    background-color: #fff;
+    border: 1px solid #86b1e0;
+    height: 48px;
+    padding: 0 16px;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    min-width: 100px;
+}
+
+button.rsp-btn:hover {
+    color: #204291;
+    border-color: #204291;
+}
+
+.rsp-btn-next::after, .rsp-btn-back::before{
+    font-family: 'FontAwesome';
+    font-size: 26px;
+    line-height: 16px;
+    content: " \f0da";
+    position: relative;
+    left: 1px;
+    top: 4px;
+}
+.rsp-btn-back::before{
+    content: " \f0d9";
+    left: -8px;
+}
+
+
+/* ------------------------------------------------------------------- */
+/* progress bar */
+/* ------------------------------------------------------------------- */
+
+.rsp-progress-container {
+    clear: both;
+    margin-right: 10px;
+}
+
+.rsp-progress {
+    background-color: #F0F0F0;
+}
+.rsp-progress-bar {
+    background-color: #65cb98;
+}
+.rsp-progress-label {
+    
+}
+/* -------------------------------------------- */
+/* ----- radio / checkboxes form overlays ----- */
+/* -------------------------------------------- */
+
+/* Overwrites values from DefaultVariables.css */
+
+.rsp-radio:not(old):not(.rsp-hide) + label:before,
+.rsp-checkbox:not(old):not(.rsp-hide) + label:before
 {
-
+    background-color: #ffffff; /* Background Color */
+    border-color: #767676; /* Question Color */
 }
 
-.nqeven
+.rsp-checkbox:not(old):not(.rsp-hide) + label:before
 {
-
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
 }
-
-.nqinput/*inputvelden..text velden*/
+body.rsp-notouch .rsp-checkbox:not(old):not(.rsp-hide) + label:hover:before
 {
-	width:100%;
+    background-color: #65cb98; /* Background Color */
+    border-color: #65cb98;
+    color:#ffffff; /* Highlight Color */
 }
-.nqquestion /*de vraag*/
+.rsp-checkbox:not(old):not(.rsp-hide):checked + label:before
 {
-	font-size: 16px;
-	font-weight: bold;
+    color: #65cb98; /* Background Color */
+    border-color: #65cb98; /* Highlight Color */
+    background-color: #ffffff; /* Highlight Color */
 }
-
-.nqmatrixodd {
-	vertical-align: text-top;
-	border-bottom:solid #CCC 1px;
-}
-.nqmatrixeven 	/*even blaat*/
+body.rsp-notouch .rsp-checkbox:not(old):not(.rsp-hide):checked + label:hover:before
 {
-	vertical-align: text-top;
-	border-bottom:solid #CCC 1px;
+    color: #65cb98; /* Background Color */
+    border-color: #65cb98; /* Highlight Color */
+    background-color: #ffffff; /* Highlight Color */
 }
-
-.nqmatrixheader /*subkopjes*/
+body.rsp-notouch .rsp-radio:not(old):not(.rsp-hide) + label:hover:before
 {
-
+    background: #ffffff;
+    width: 5px;
+    height: 5px;
+    border-width: 7px;
+    border-color: #65cb98;
+    box-shadow: none;
 }
-
-
-}
-.nqtextblock /*textblok veranderen naar primaire kleur?*/
+.rsp-radio:not(old):not(.rsp-hide):checked + label:before
 {
-
+    border-color: #65cb98; /* Highlight Color */
+    background: #65cb98; /* Background Color */
 }
-TD.nqerror /**/
+body.rsp-notouch .rsp-radio:not(old):not(.rsp-hide):checked + label:hover:before
 {
-	color: #FF0000;
-}
-H2.nqerror /**/	
-{
-	color: #FF0000;
+    border-color:#65cb98; /* Highlight Color */
+    background: #65cb98; /* Background Color */
 }
 
-.nqerror
-{
-	color: #FF0000;
+@media (max-width: 1000px) {
+
+    .rsp-radio:not(old) + label:before,
+    .rsp-checkbox:not(old) + label:before
+    {
+        background-color: #ffffff; /* Background Color */
+        border-color: #767676; /* Question Color */
+    }
+
+    .rsp-checkbox:not(old):not(.rsp-hide) + label:before
+    {
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+    }
+    body.rsp-notouch .rsp-checkbox:not(old) + label:hover:before
+    {
+        background-color: #65cb98; /* Background Color */
+        border-color: #65cb98;
+        color:#ffffff; /* Highlight Color */
+    }
+    .rsp-checkbox:not(old):checked + label:before
+    {
+        color: #ffffff; /* Background Color */
+        border-color:#65cb98; /* Highlight Color */
+        background-color:#65cb98; /* Highlight Color */
+    }
+    body.rsp-notouch .rsp-checkbox:not(old):checked + label:hover:before
+    {
+        color: #ffffff; /* Background Color */
+        border-color:#65cb98; /* Highlight Color */
+        background-color:#65cb98; /* Highlight Color */
+    }
+    body.rsp-notouch .rsp-radio:not(old) + label:hover:before
+    {
+        background: #ffffff;
+        width: 5px;
+        height: 5px;
+        border-width: 7px;
+        border-color: #65cb98;
+        box-shadow: none;
+    }
+    .rsp-radio:not(old):checked + label:before
+    {
+        border-color:#65cb98; /* Highlight Color */
+        background: #65cb98; /* Background Color */
+    }
+    body.rsp-notouch .rsp-radio:not(old):checked + label:hover:before
+    {
+        border-color:#65cb98; /* Highlight Color */
+        background: #65cb98; /* Background Color */
+    }
+
 }
 
 
-.nqindicator
-{
 
+/* --------------------------------------*/
+/* ---------- RADIOS / CHECKBOXES ---------- */
+/* --------------------------------------*/
+
+/* Overwrites values from Elements.css */
+
+.rsp-radio:not(old):not(.rsp-hide) + label:before,
+.rsp-checkbox:not(old):not(.rsp-hide) + label:before {
+  content: '';
+  border-width: 1px;
+  border-style: solid;
+  display: inline-block;
+  vertical-align: middle;
+  width: 15px;
+  height: 15px;
+  padding: 2px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translate(0, -50%);
+  -moz-transform: translate(0, -50%);
+  -ms-transform: translate(0, -50%);
+  -o-transform: translate(0, -50%);
+  transform: translate(0, -50%);
+  margin-left: 0;
 }
 
-@media print { 
- * {
- font-size: 10px;
- margin-left:0px!important;
- margin-right:0px!important;
- padding-left:0px!important;
- padding-right:0px!important;  
- }
+.rsp-radio:not(old):not(.rsp-hide):checked + label:before,
+body.rsp-notouch .rsp-radio:not(old):not(.rsp-hide):checked + label:hover:before {
+    width: 15px;
+    height: 15px;
+    border-width: 1px;
+    box-shadow: inset 0px 0px 0px 4px #ffffff; /* Background Color */
+}
+@media (max-width: 1000px) {
+  .rsp-radio:not(old) + label:before,
+    .rsp-checkbox:not(old) + label:before {
+      content: '';
+      border-width: 1px;
+      border-style: solid;
+      display: inline-block;
+      vertical-align: middle;
+      width: 15px;
+      height: 15px;
+      padding: 2px;
+      text-align: left;
+      position: absolute;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+      -moz-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+    
+    .rsp-radio:not(old):checked + label:before,
+    body.rsp-notouch .rsp-radio:not(old):checked + label:hover:before {
+        width: 15px;
+        height: 15px;
+        border-width: 1px;
+        box-shadow: inset 0px 0px 0px 4px #ffffff; /* Background Color */
+    }
+}
+/* ================ */
+/* = Input fields = */
+/* ================ */
+
+input.rsp-text,
+textarea.rsp-textarea {
+    border: 1px solid #767676;
+    padding: 6px 12px;
+    outline: none;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+}
+
+input.rsp-text:focus,
+textarea.rsp-textarea:focus {
+    border: 1px solid #65cb98;
+    padding: 6px 12px;
+}
+/* ========== */
+/* = Slider = */
+/* ========== */
+
+
+.rsp-slider-container .rsp-slider{
+   
+}
+.rsp-slider-container .rsp-slider-top .rsp-slider-answer{
+   
+}
+.rsp-slider-container .rsp-slider-top .rsp-slider-answer:after,
+.rsp-slider-container .rsp-slider-top .rsp-slider-answer:before{
+    
+}
+
