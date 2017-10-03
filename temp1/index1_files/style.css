@@ -1,0 +1,86 @@
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+BODY{
+	height:100%;
+	font-family: 'Droid Arabic Kufi', 'droid_arabic_kufiregular', sans-serif !important;
+	font-size: 12px;
+	font-weight: normal;
+	font-style: normal;
+	color: #000;
+	background-color:#bcbdc1;
+	text-align:right !important;
+	margin:0px;
+	padding:0;
+	direction: rtl !important;
+}
+
+
+.nqodd
+{
+
+}
+
+.nqeven
+{
+
+}
+
+.nqinput/*inputvelden..text velden*/
+{
+	width:100%;
+}
+.nqquestion /*de vraag*/
+{
+	font-size: 16px;
+	font-weight: bold;
+}
+
+.nqmatrixodd {
+	vertical-align: text-top;
+	border-bottom:solid #CCC 1px;
+}
+.nqmatrixeven 	/*even blaat*/
+{
+	vertical-align: text-top;
+	border-bottom:solid #CCC 1px;
+}
+
+.nqmatrixheader /*subkopjes*/
+{
+
+}
+
+
+}
+.nqtextblock /*textblok veranderen naar primaire kleur?*/
+{
+
+}
+TD.nqerror /**/
+{
+	color: #FF0000;
+}
+H2.nqerror /**/	
+{
+	color: #FF0000;
+}
+
+.nqerror
+{
+	color: #FF0000;
+}
+
+
+.nqindicator
+{
+
+}
+
+@media print { 
+ * {
+ font-size: 10px;
+ margin-left:0px!important;
+ margin-right:0px!important;
+ padding-left:0px!important;
+ padding-right:0px!important;  
+ }

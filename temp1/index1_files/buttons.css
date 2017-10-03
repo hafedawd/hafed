@@ -1,0 +1,51 @@
+.nqbutton, #nqssStartButton {
+	-webkit-appearance: none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+	background:none;
+	border:none;
+	display:inline-block;
+	text-indent: 5000px;
+	height:50px;
+	width:50px;
+	padding: 0;
+	margin: 0;
+}
+
+.nqbutton:hover, #nqssStartButton:hover {
+	background-position: bottom;}
+.nqbutton:active, #nqssStartButton:active {
+	position:relative;
+	top:1px;
+}
+#nqssStartButton{text-transform:none;}
+
+.nqinput{
+	border: solid #c1c1c1 1px;
+	border-radius: 0px;
+	padding: 0.3em;
+	background-color:#FFF;
+	box-shadow: 0px 2px 2px rgba(0,0,0,.1) inset;
+	-moz-transition: all .2s ease;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	-khtml-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+.nqinput:focus{
+	box-shadow: 0px 2px 3px rgba(0,0,0,.3) inset;
+	background: #fffef2;
+}
+
+.nqBtnNext, .nqBtnSubmit, .nqBtnStart{	
+	background: url(https://sjablonen.datacoll.nl/rnw/rnwarabjan15/forward.png);
+	float:left;
+	}
+
+.nqBtnBack{
+	background: url(https://sjablonen.datacoll.nl/rnw/rnwarabjan15/back.png);
+	float:right;
+	}

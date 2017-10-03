@@ -1,0 +1,65 @@
+HTML{
+	height:100%;
+}
+
+		 /* Wrapper for page content to push down footer */
+#wrap{
+	width: 900px;
+	min-height: 100%;
+	background: #FFF;
+	height: auto !important;
+	height: 100%;
+    /* Negative indent footer by it's height */
+	margin: 0 auto -72px;
+}
+
+#container{
+
+}
+
+.titlebar{
+	width: 840px;
+	padding: 20px 30px;
+	position: relative;
+	top: -30px;
+	left: 30px;
+	color: #FFF;
+	background: #3a3a3c;
+}	
+
+#header{
+	width: 100%;
+	background:url(https://sjablonen.datacoll.nl/rnw/rnwarabjan15/header.jpg);
+}
+
+#content{
+	background-color:#FFF;
+	overflow: visible!important;
+	overflow: auto;
+	padding:30px 30px 30px 40px;
+}
+
+#push{height: 72px}
+#footer a:link, a:visited{color: #000; text-decoration:none}
+#footer a:hover, a:active{ color:#6b6b6b} 
+#footer{
+	height: 50px;
+	width:840px;
+	margin: 0 auto;
+	padding:10px 0;
+	color:#6b6b6b;
+	text-align:right;
+	border-top: ridge 2px #9d9d9d;
+}
+.footersub{
+	float: right;
+	width: 33%;
+	line-height: 1.5em;
+}
+
+.thumb{
+	float: right;
+	position: relative;
+	top: 2px;
+	margin-left: 15px;
+}

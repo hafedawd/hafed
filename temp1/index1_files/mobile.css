@@ -1,0 +1,102 @@
+HTML{
+	height:100%;
+	-webkit-text-size-adjust: none;
+	font-size: 1.1em;
+}
+
+		 /* Wrapper for page content to push down footer */
+#wrap{
+	width:auto;
+	min-height: 100%;
+	background: #FFF;
+	height: auto !important;
+	height: 100%;
+    /* Negative indent footer by it's height */
+	margin: 0 auto -150px;
+}
+
+#container{
+}
+
+.titlebar{
+	width: 100%;
+	padding:10px;
+	position: relative;
+	top: -10px;
+	left: 10px;
+	color: #FFF;
+	background: #3a3a3c;
+}	
+
+#mobheader, #logoright{
+	width: 50%;
+	height: 80px;
+	float: left;
+	background:#ed1b24 url(https://sjablonen.datacoll.nl/rnw/rnwarabjan15/mobleft.png) no-repeat;
+	background-position: 10% 40px;
+	background-size: auto 32px;
+}
+
+#logoright{
+	background:#ed1b24 url(https://sjablonen.datacoll.nl/rnw/rnwarabjan15/mobright.png) no-repeat;
+	background-position:90% 10px;
+	background-size: auto 60px;
+}
+
+#header{
+	display: none;
+}
+
+#content{
+	background-color:#FFF;
+	overflow: auto;
+	padding:10px;
+}
+
+#push{height: 150px;}
+#footer a:link, a:visited{color: #000; text-decoration:none}
+#footer a:hover, a:active{ color:#6b6b6b} 
+#footer{
+	width:96%;
+	margin: 0 auto;
+	padding:10px 4% 0 0;
+	color:#6b6b6b;
+	text-align:right;
+	background-color: #FFF;
+	border-top: ridge 1px #9d9d9d;
+}
+.footersub{
+	height: 30px;
+	width: 100%;
+	margin-bottom: 10px;
+	line-height: 1.5em;
+}
+
+.thumb{
+	height: 25px;
+	width: 25px;
+	float: right;
+	position: relative;
+	top: 2px;
+	margin-left: 15px;
+}
+
+.nqinput/*inputvelden..text velden*/
+{
+	width:96%;
+}
+
+
+.nqquestion {font-size:1.3em; }
+select.nqinput{min-width:120px;}
+.nqmatrixeven, .nqmatrixodd {border-bottom:2px solid #666;}
+.matrix-Question {width:100%;}
+.nqbutton  {
+	font-size:18px;
+}
+
+.nqBtnNext, .nqBtnSubmit, .nqBtnStart, .nqBtnBack{	
+	height: 40px !important;
+	width: 40px !important;
+	background-size: 40px auto !important;
+	}
